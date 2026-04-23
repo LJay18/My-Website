@@ -12,7 +12,7 @@ app.use(express.json());
 const PORT = 2468;
 
 //connect to database locally
-mongoose.connect("mongodb://localhost:27017/myfirstDB")
+mongoose.connect(process.env.MONGODB_URI)
 .then(() => console.log("MonogDB connected sucessfully"))
 .catch((err) => console.log("MongoDB connection error:", err))
 
