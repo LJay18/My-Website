@@ -1,4 +1,4 @@
-import useFetch from "./Hooks/UseFetch";
+import useFetch from "./Hooks/useFetch";
 
 function Home() {
     const { data, loading } = useFetch("https://jsonplaceholder.typicode.com/posts")
